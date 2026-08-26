@@ -70,7 +70,9 @@ not. It gets redacted before anything is stored or synced.
 
 And the boring one that matters most: results have to land in the CRM, and
 the CRM has no API. The browser automation that does the entry has to survive
-an application that was never designed to be driven by software.
+an application that was never designed to be driven by software. The read and
+write approach is written up in
+[legacy-crm-toolkit](https://github.com/corymlauden/legacy-crm-toolkit).
 
 ## The demo dataset
 
