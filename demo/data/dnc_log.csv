@@ -1,0 +1,5 @@
+contact_id,phone,requested_at,source_call_id,customer_words,suppressed,confirmed_on_call
+200159,+14845550142,2026-06-26 12:07:00,1214,Put me on your do not call list.,yes,yes
+200193,+14845550193,2026-06-13 17:03:00,1256,Put me on your do not call list.,yes,yes
+200201,+12155550145,2026-07-08 14:04:00,1266,Take me off your list please.,yes,yes
+200226,+14845550124,2026-07-11 12:18:00,1297,I've asked before. Do not call me again.,yes,yes

@@ -1,0 +1,49 @@
+{
+  "call_id": 1248,
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hi, is this Jacob? Hi Jacob, this is Alex calling from Fieldstone Home Products. You entered to receive a free twenty dollar gift card, and I'm calling to schedule a time to drop that off for you."
+    },
+    {
+      "speaker": "customer",
+      "text": "Oh, right. I think I filled that out at the pizza place."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's the one. When we come by with the gift card we also do a quick demonstration of our cleaning system, it also purifies the air.  Short visit, no obligation. Would tomorrow evening around six or Thursday afternoon around two work better for you?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Thursday afternoon is better. Two is fine."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thursday at two. A couple quick questions so we can prepare. Does anyone in the house have allergies or asthma?"
+    },
+    {
+      "speaker": "customer",
+      "text": "My son does, allergies."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good to know. Any pets or small children?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Two dogs."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. We do ask that both you and your spouse are there so you can both see it and ask questions. Will that work?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah, he's home by then."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're all set for Thursday at two. You'll get the gift card just for having us out. Thanks Jacob, we'll see you then."
+    }
+  ]
+}

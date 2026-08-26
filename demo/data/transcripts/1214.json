@@ -1,0 +1,17 @@
+{
+  "call_id": 1214,
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hi, is this Jeffrey? Hi Jeffrey, this is Alex calling from Fieldstone Home Products. You entered to receive a free twenty dollar gift card, and I'm calling to schedule a time to drop that off for you."
+    },
+    {
+      "speaker": "customer",
+      "text": "Put me on your do not call list."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand, I apologize for the call. I'm marking this number do not call and you'll be removed from any future outreach. Thank you for your time, have a good day."
+    }
+  ]
+}

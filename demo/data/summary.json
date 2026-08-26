@@ -1,0 +1,25 @@
+{
+  "contacts_in_backlog": 250,
+  "contacts_attempted": 214,
+  "total_calls_placed": 328,
+  "by_disposition": {
+    "no_answer": 194,
+    "voicemail": 43,
+    "not_interested": 22,
+    "booked": 19,
+    "wrong_number": 16,
+    "callback": 15,
+    "disconnected": 12,
+    "dnc": 4,
+    "language_barrier": 3
+  },
+  "connect_rate": 0.192,
+  "appointments_booked": 19,
+  "booking_rate_on_connect": 0.302,
+  "opt_outs_captured": 4,
+  "numbers_suppressed": 4,
+  "bad_numbers_identified": 28,
+  "avg_talk_time_sec": 107.8,
+  "campaign_window": "2026-06-01 to 2026-07-15",
+  "oldest_contact_days": 1280
+}

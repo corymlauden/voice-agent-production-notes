@@ -1,0 +1,17 @@
+{
+  "call_id": 1025,
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hi, is this Jacob? Hi Jacob, this is Alex calling from Fieldstone Home Products. You entered to receive a free twenty dollar gift card, and I'm calling to schedule a time to drop that off for you."
+    },
+    {
+      "speaker": "customer",
+      "text": "No English, sorry. No English."
+    },
+    {
+      "speaker": "agent",
+      "text": "No problem at all, I apologize. Thank you, goodbye."
+    }
+  ]
+}

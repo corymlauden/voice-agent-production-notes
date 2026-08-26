@@ -1,0 +1,25 @@
+{
+  "call_id": 1239,
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hi, is this Ashley? Hi Ashley, this is Alex calling from Fieldstone Home Products. You entered to receive a free twenty dollar gift card, and I'm calling to schedule a time to drop that off for you."
+    },
+    {
+      "speaker": "customer",
+      "text": "I'm actually walking into work right now. Can you try me later?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course. What day and time is usually good for you?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Try me Saturday morning, before ten."
+    },
+    {
+      "speaker": "agent",
+      "text": "Saturday morning before ten, I've got it down. Thanks, talk to you then."
+    }
+  ]
+}

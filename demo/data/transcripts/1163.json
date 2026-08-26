@@ -1,0 +1,17 @@
+{
+  "call_id": 1163,
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hi, is this Amanda?"
+    },
+    {
+      "speaker": "customer",
+      "text": "No, you've got the wrong number. There's nobody here by that name."
+    },
+    {
+      "speaker": "agent",
+      "text": "Sorry to bother you, I'll get this number corrected. Have a good day."
+    }
+  ]
+}
