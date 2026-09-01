@@ -87,6 +87,16 @@ booking rate tells an experienced operator you've never run one of these.
 This one connects on 19% of calls and books on 30% of connects, which is what
 an honest aged-list campaign looks like.
 
+To poke at it, no dependencies needed:
+
+```bash
+cd demo
+python3 show.py                # the campaign numbers
+python3 show.py call 1038      # one booked call, turn by turn
+python3 show.py dnc            # the do-not-call audit log
+python3 show.py cleanup        # what got written back to the CRM
+```
+
 ## What's deliberately not here
 
 The production conversation prompts, the vendor configuration, the CRM
