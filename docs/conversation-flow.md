@@ -5,6 +5,51 @@ script lines. The agent talks naturally inside each node and the flow decides
 what it's allowed to do next. This doc describes the anatomy, not the exact
 prompts, which stay private.
 
+```mermaid
+flowchart TD
+    A[Greeting and identity check] -->|right person| B[Reason for the call]
+    A -->|not them| WN[Wrong number]
+    A -->|no pickup| VM[Voicemail]
+    B --> C[Qualification]
+    C --> D[Scheduling<br/>two concrete options]
+    D -->|picks one| E[Confirmation and<br/>post-booking profiling]
+    E --> OK([Appointment written to CRM])
+
+    B -.->|objection| OBJ[Objection routing<br/>one answer, then back]
+    C -.->|objection| OBJ
+    D -.->|objection| OBJ
+    OBJ -->|once| B
+
+    B -->|take me off your list| DNC[Do not call]
+    C -->|take me off your list| DNC
+    D -->|take me off your list| DNC
+    DNC --> SUP([Suppress number<br/>write audit record])
+
+    B -->|flat no| NI[Not interested]
+    C -->|flat no| NI
+    D -->|flat no| NI
+    NI --> END1([Warm exit, no redial this cycle])
+
+    D -->|call me back Saturday| CB[Callback request]
+    CB --> CBL([Written to callback list<br/>with the caller's window])
+
+    WN --> FIX([Flag number for correction])
+    VM --> RETRY([Counted as attempt,<br/>retry rules apply])
+
+    classDef spine fill:#e8f0fe,stroke:#4a6fa5,color:#1a1a1a
+    classDef branch fill:#fff4e5,stroke:#c77d1a,color:#1a1a1a
+    classDef legal fill:#fde8e8,stroke:#b03a2e,color:#1a1a1a
+    classDef out fill:#eef6ee,stroke:#3c7a3c,color:#1a1a1a
+    class A,B,C,D,E spine
+    class WN,VM,NI,CB,OBJ branch
+    class DNC,SUP legal
+    class OK,END1,CBL,FIX,RETRY out
+```
+
+Blue is the spine, the path a willing caller takes. Orange is the branches.
+Red is the one branch that's a legal obligation, not a preference. Every exit
+on the right writes something back to the CRM.
+
 ## The spine
 
 The happy path is short on purpose. Five states get a willing caller from
