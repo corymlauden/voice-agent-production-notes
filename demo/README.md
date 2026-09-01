@@ -29,7 +29,21 @@ which call produced it, when, and the caller's exact words.
 | `data/dnc_log.csv` | Do-not-call audit log |
 | `data/summary.json` | The campaign numbers at a glance |
 
-Regenerate with:
+## Reading it
+
+`show.py` is a small viewer so you don't have to squint at JSON. Standard
+library only.
+
+```bash
+python3 show.py                  # campaign summary
+python3 show.py calls            # every connected call, one line each
+python3 show.py call 1038        # one transcript, turn by turn
+python3 show.py appointments     # what got booked, with prep notes
+python3 show.py dnc              # the do-not-call audit log
+python3 show.py cleanup          # what the campaign fixed in the list
+```
+
+Regenerate the data with:
 
 ```bash
 python3 generate_demo_data.py --out ./data
